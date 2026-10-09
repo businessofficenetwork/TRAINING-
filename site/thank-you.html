@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're registered | Free Workshop</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body id="ty">
+
+<header class="dark ty-hero">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="/">[Your name]</a>
+    </div>
+    <div class="ty-head">
+      <p class="eyebrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        Registration confirmed
+      </p>
+      <h1 class="display">You're in</h1>
+      <p class="lede" id="ty-when">Your date and Zoom link are on their way to your inbox.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap steps">
+      <div class="step">
+        <span class="num" aria-hidden="true">01</span>
+        <h2>Find the confirmation email</h2>
+        <p>It's from [your email address]. Not there in five minutes? Check spam or Promotions and move it to your inbox so the reminders reach you.</p>
+      </div>
+      <div class="step">
+        <span class="num" aria-hidden="true">02</span>
+        <h2>Block the evening</h2>
+        <p>Put it on your calendar now so it doesn't get buried.</p>
+        <div class="cal-btns" id="cal-btns" hidden>
+          <a class="btn btn-sm btn-outline" id="cal-google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+          <a class="btn btn-sm btn-outline" id="cal-ics" href="#">Apple / Outlook</a>
+        </div>
+      </div>
+      <div class="step accent">
+        <span class="num" aria-hidden="true">03</span>
+        <h2>Hit reply and tell me your biggest headache</h2>
+        <p>What's the one thing that slows your office down on insurance jobs? Reply to the confirmation email and tell me. I'll cover as many as I can in the workshop.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="dark share" aria-labelledby="share-title">
+      <div class="share-text">
+        <h2 class="display" id="share-title">Bring your office</h2>
+        <p>Know someone on your team who should hear this? Send them the link so they can register with their own email.</p>
+      </div>
+      <div class="share-row">
+        <div class="share-url" id="share-url"></div>
+        <button class="btn" type="button" id="copy-link">Copy link</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 [Business name]</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:[your email address]">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
