@@ -8,7 +8,7 @@ window.WORKSHOP = {
   hostName: "Keri McAllister",
 
   // Shown to people if registration fails, so they can reach you.
-  contactEmail: "[your email address]",
+  contactEmail: "training@businessofficenetwork.com",
 
   // Meta Pixel ID from Events Manager, e.g. "123456789012345".
   // Leave empty ("") and the pixel stays off.
