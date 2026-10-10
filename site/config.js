@@ -5,7 +5,7 @@
    ============================================================ */
 window.WORKSHOP = {
   title: "Where Roofing Offices Lose Insurance Money",
-  hostName: "[Your name]",
+  hostName: "Keri McAllister",
 
   // Shown to people if registration fails, so they can reach you.
   contactEmail: "[your email address]",

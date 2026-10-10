@@ -1,6 +1,0 @@
-Put two images in this folder:
-
-host.jpg   your photo, portrait, about 800 x 1000 pixels
-share.jpg  1200 x 630 image shown when the link is shared on Facebook
-
-You can delete this text file afterward.
