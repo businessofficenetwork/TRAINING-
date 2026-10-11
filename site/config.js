@@ -22,14 +22,14 @@ window.WORKSHOP = {
       label: "Thursday, Oct 22",
       time: "6:30 pm MT (7:30 CT, 8:30 ET)",
       startUtc: "20261023T003000Z",
-      endUtc: "20261023T013000Z",
+      endUtc: "20261023T010000Z",
       zoom: ""
     },
     oct27: {
       label: "Tuesday, Oct 27",
       time: "6:30 pm MT (7:30 CT, 8:30 ET)",
       startUtc: "20261028T003000Z",
-      endUtc: "20261028T013000Z",
+      endUtc: "20261028T010000Z",
       zoom: ""
     }
   }
