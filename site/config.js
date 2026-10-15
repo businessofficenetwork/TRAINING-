@@ -12,7 +12,7 @@ window.WORKSHOP = {
 
   // Meta Pixel ID from Events Manager, e.g. "123456789012345".
   // Leave empty ("") and the pixel stays off.
-  pixelId: "",
+  pixelId: "1828635877548920",
 
   // Start/end times are in UTC (Mountain Daylight Time + 6 hours).
   // Paste each date's Zoom link once you've created the meeting;
