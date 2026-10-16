@@ -144,6 +144,40 @@
     });
   }
 
+  /* ---------- Enrollment page ---------- */
+  if (document.getElementById('enroll')) {
+    var links = { individual: C.stripeIndividual, team: C.stripeTeam };
+    document.querySelectorAll('[data-pay]').forEach(function (el) {
+      var url = links[el.getAttribute('data-pay')];
+      if (url && /^https:\/\//.test(url)) {
+        el.setAttribute('href', url);
+        el.classList.remove('is-off');
+        el.removeAttribute('aria-disabled');
+        el.querySelector('.pay-label').textContent = el.getAttribute('data-label');
+        el.addEventListener('click', function () { track('InitiateCheckout'); });
+      } else {
+        el.addEventListener('click', function (e) { e.preventDefault(); });
+      }
+    });
+
+    var copyLetter = document.getElementById('copy-letter');
+    var letter = document.getElementById('letter-text');
+    if (copyLetter && letter) {
+      copyLetter.addEventListener('click', function () {
+        var text = letter.innerText;
+        var done = function () {
+          copyLetter.textContent = 'Copied';
+          setTimeout(function () { copyLetter.textContent = 'Copy the letter'; }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { selectText(letter); });
+        } else {
+          selectText(letter);
+        }
+      });
+    }
+  }
+
   function icsText(s) {
     return String(s).replace(/\\/g, '\\\\').replace(/([,;])/g, '\\$1').replace(/\n/g, '\\n');
   }

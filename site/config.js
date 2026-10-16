@@ -10,6 +10,11 @@ window.WORKSHOP = {
   // Shown to people if registration fails, so they can reach you.
   contactEmail: "training@businessofficenetwork.com",
 
+  // Stripe Payment Links for the course (enrollment page buttons).
+  // While these are empty, the buttons say "Enrollment opens Oct 22".
+  stripeIndividual: "",
+  stripeTeam: "",
+
   // Meta Pixel ID from Events Manager, e.g. "123456789012345".
   // Leave empty ("") and the pixel stays off.
   pixelId: "1828635877548920",
